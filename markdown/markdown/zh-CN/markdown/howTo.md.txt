@@ -1,0 +1,124 @@
+# Hi~ 这是 Markdown 阅读器/编辑器
+
+## 概述
+
+- Markdown 的目标是实现「易读易写」 (更容易阅读、编写)
+- 广泛使用 (参阅 [Markdown TW](https://markdown.cn/) , [wikipedia](https://zh.wikipedia.org/zh-cn/Markdown "This title"))
+  - 撰写说明文件, 论坛上发表讯息 与 撰写电子书
+
+## 功能与特色
+
+1. 阅读器 A4 大小, 方便列印转档 (ctrl-p)
+2. 编辑器 - 双按==阅读器==画面, 可切换 **编辑器**/_阅读器_
+3. 编辑器 简介
+   ![note](markdown/markdown_toolbar.jpg "mouse over")
+   1. 上方为各功能画面预览, 点选可加入预览画面使用的编辑语法
+   2. 可搜寻与快速加入最左方画面预览 ctrl-enter
+   3. esc 键~~清除搜寻~~
+   4. 编辑语法 <-> 阅读器 同步显示
+
+```mermaid
+flowchart LR
+a[编辑器] --> b[即时预览] --> c(阅读器)
+a <--同步显示--> c
+```
+
+!!! note 计划支援
+    1. 图片使用拖拉加入功能  
+    2. 可支援档案上传与选择 ( if +Server)
+
+# Markdown 展示
+      左方4个空白键
+> 21^th^ H~2~O
+!!! :+1::heavy_check_mark::hamster::frog::rocket:
+     `console.log("inline code")`
+
+!!! tip 数学式  
+    Inline: $E=mc^2$
+    $$
+    \displaystyle
+        \frac{1}{
+            \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
+            \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
+            1+\frac{e^{-6\pi}}
+            {1+\frac{e^{-8\pi}}
+            {1+\cdots} }
+            }
+        }
+    $$
+
+!!! snippet 程式  
+    >
+    ```js
+    let theList = ["Markdown", "Reader", "Editor"];
+    for (let eachOne of theList) {
+      console.log("Hello ", eachOne);
+    }
+    ```
+
+!!! Done 表格  
+    >
+    | default | text left | text center | text right |
+    | ------- | :-------- | :---------: | ---------: |
+    | data    | :-        |             |            |
+    | data    |           |     :-:     |            |
+    | data    |           |             |         -: |
+
+
+!!! Success 流程图  
+    ```mermaid
+    flowchart TD
+    a[Start] --> b{Going} --> c(fa:fa-home Stop)
+    a --what--> c
+    ```
+!!! Success 圆饼图  
+    ```mermaid
+    pie title Pets adopted by volunteers
+      "Dogs" : 386
+      "Cats" : 85
+      "Rats" : 15
+    ```
+!!! Success 物件图表
+    ```mermaid
+    classDiagram
+        Animal <|-- Fish
+        Animal : +int iVar
+        Animal: +theFn()
+        class Fish{
+          -String sVar
+          -fishFn()
+        }
+    ```
+
+!!! Success 状态图
+    ```mermaid
+    stateDiagram-v2
+        [*] --> Still
+        Still --> [*]
+        Still --> Moving
+        Moving --> Still
+        Moving --> Crash
+        Crash --> [*]
+    ```
+
+!!! Success 甘特图
+    ```mermaid
+    gantt
+    title Your Title (Gantt Diagram)
+    dateFormat  YYYY-MM-DD
+    section S1 Section
+    A task  :a1, 2023-01-01, 6d
+    B task  :after a1, 2d
+    section S2 Section
+    C task  :c1, 2023-01-01, 2d
+    D task  :after c1, 6d
+    ```
+
+!!! Success 时序图
+    ```mermaid
+    sequenceDiagram
+        A->>B: A ->>  B
+        A->>+B: A ->> +B
+        B-->>-A: B --> -A
+        B-->>A: B -->> A
+    ```

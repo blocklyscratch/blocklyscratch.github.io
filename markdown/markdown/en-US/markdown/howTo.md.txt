@@ -1,0 +1,124 @@
+# Hi~ This is a Markdown reader/editor
+
+## Overview
+
+- The goal of Markdown is to achieve easy-to-read and easy-to-write
+- Widely used (see [wikipedia](https://en.wikipedia.org/wiki/Markdown "This title"))
+  - Write documentation pages, blogging, instant messaging, online forums and write eBooks
+
+## Features
+
+1. The size of Reader is A4, easy to print and transfer (ctrl-p)
+2. Editor - double clicks ==reader== screen to switch **editor**/_reader_
+3. Introduction to the editor
+    ![note](markdown/markdown_toolbar.jpg "mouse over")
+    1. The upper part is the preview of each function screen, click to add the editing syntax used in the preview screen
+    2. You can search and quickly add the leftmost screen preview ctrl-enter
+    3. Esc key ~~clear search~~
+    4. Edit Grammar <-> Reader Synchronous Display
+
+```mermaid
+flowchart LR
+a[editor] --> b[instant preview]--> c(reader)
+a <--Synchronous display --> c
+```
+
+!!! note plan support
+     1. Use the drag-and-drop function for images
+     2. Support file upload and selection (if +Server)
+
+# Markdown Demo
+       4 blank keys on the left
+
+> 21^th^ H~2~O
+!!! :+1::heavy_check_mark::hamster::frog::rocket:
+     `console.log("inline code")`
+
+!!! tip Math  
+    Inline: $E=mc^2$
+    $$
+    \displaystyle
+        \frac{1}{
+            \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
+            \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
+            1+\frac{e^{-6\pi}}
+            {1+\frac{e^{-8\pi}}
+            {1+\cdots} }
+            }
+        }
+    $$
+
+!!! snippet Promming Languase  
+    ```js
+    let theList = ["Markdown", "Reader", "Editor"];
+    for (let eachOne of theList) {
+      console.log("Hello ", eachOne);
+    }
+    ```
+
+!!! Done Table  
+    >
+    | default | text left | text center | text right |
+    | ------- | :-------- | :---------: | ---------: |
+    | data    | :-        |             |            |
+    | data    |           |     :-:     |            |
+    | data    |           |             |         -: |
+
+
+!!! Success Flowchart  
+    ```mermaid
+    flowchart TD
+    a[Start] --> b{Going} --> c(fa:fa-home Stop)
+    a --what--> c
+    ```
+!!! Success Pie  
+    ```mermaid
+    pie title Pets adopted by volunteers
+      "Dogs" : 386
+      "Cats" : 85
+      "Rats" : 15
+    ```
+!!! Success Class diagram
+    ```mermaid
+    classDiagram
+        Animal <|-- Fish
+        Animal : +int iVar
+        Animal: +theFn()
+        class Fish{
+          -String sVar
+          -fishFn()
+        }
+    ```
+
+!!! Success State diagram
+    ```mermaid
+    stateDiagram-v2
+        [*] --> Still
+        Still --> [*]
+        Still --> Moving
+        Moving --> Still
+        Moving --> Crash
+        Crash --> [*]
+    ```
+
+!!! Success Gantt
+    ```mermaid
+    gantt
+    title Your Title (Gantt Diagram)
+    dateFormat  YYYY-MM-DD
+    section S1 Section
+    A task  :a1, 2023-01-01, 6d
+    B task  :after a1, 2d
+    section S2 Section
+    C task  :c1, 2023-01-01, 2d
+    D task  :after c1, 6d
+    ```
+
+!!! Success Sequence diagram
+    ```mermaid
+    sequenceDiagram
+        A->>B: A ->>  B
+        A->>+B: A ->> +B
+        B-->>-A: B --> -A
+        B-->>A: B -->> A
+    ```
