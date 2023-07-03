@@ -35,7 +35,7 @@ a <--同步显示--> c
 
 !!! tip 数学式  
     Inline: $E=mc^2$
-    $$
+    ```math
     \displaystyle
         \frac{1}{
             \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
@@ -45,7 +45,7 @@ a <--同步显示--> c
             {1+\cdots} }
             }
         }
-    $$
+    ```
 
 !!! snippet 程式  
     >

@@ -36,7 +36,7 @@ a <--Synchronous display --> c
 
 !!! tip Math  
     Inline: $E=mc^2$
-    $$
+    ```math
     \displaystyle
         \frac{1}{
             \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
@@ -46,7 +46,7 @@ a <--Synchronous display --> c
             {1+\cdots} }
             }
         }
-    $$
+    ```
 
 !!! snippet Promming Languase  
     ```js
