@@ -3,18 +3,18 @@
 ## 概述
 
 - Markdown 的目标是实现「易读易写」 (更容易阅读、编写)
-- 广泛使用 (参阅 [Markdown TW](https://markdown.cn/) , [wikipedia](https://zh.wikipedia.org/zh-cn/Markdown "This title"))
-  - 撰写说明文件, 论坛上发表讯息 与 撰写电子书
+- 广泛使用 (参阅 [Markdown TW](https://markdown.tw/) , [wikipedia](https://zh.wikipedia.org/zh-tw/Markdown "This title"))
+- 撰写说明文件, 发表讯息 与 撰写电子书
 
 ## 功能与特色
 
 1. 阅读器 A4 大小, 方便列印转档 (ctrl-p)
-2. 编辑器 - 双按==阅读器==画面, 可切换 **编辑器**/_阅读器_
+2. 编辑器 - ==双按阅读器==画面, 可切换 **编辑器**/_阅读器_ (或 点击阅读器外)
 3. 编辑器 简介
    ![note](markdown/markdown_toolbar.jpg "mouse over")
    1. 上方为各功能画面预览, 点选可加入预览画面使用的编辑语法
-   2. 可搜寻与快速加入最左方画面预览 ctrl-enter
-   3. esc 键~~清除搜寻~~
+   2. 可搜寻与快速加入最左方画面预览 ctrl-enter (esc 键~~清除~~搜寻)
+   3. 可使用**拖拉方式**加入图档 或 开启 文字档
    4. 编辑语法 <-> 阅读器 同步显示
 
 ```mermaid
@@ -23,9 +23,8 @@ a[编辑器] --> b[即时预览] --> c(阅读器)
 a <--同步显示--> c
 ```
 
-!!! note 计划支援
-    1. 图片使用拖拉加入功能  
-    2. 可支援档案上传与选择 ( if +Server)
+!!! note 计划支援    
+    1. 可支援档案上传与选择 ( if +Server)
 
 # Markdown 展示
       左方4个空白键

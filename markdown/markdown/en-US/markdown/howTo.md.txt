@@ -9,12 +9,12 @@
 ## Features
 
 1. The size of Reader is A4, easy to print and transfer (ctrl-p)
-2. Editor - double clicks ==reader== screen to switch **editor**/_reader_
+2. Editor - ==double clicks reader== screen to switch **editor**/_reader_ (Or click outsite of reader)
 3. Introduction to the editor
     ![note](markdown/markdown_toolbar.jpg "mouse over")
     1. The upper part is the preview of each function screen, click to add the editing syntax used in the preview screen
     2. You can search and quickly add the leftmost screen preview ctrl-enter
-    3. Esc key ~~clear search~~
+    3. **Drag** ==Images== or ==Text files== into Markdown.
     4. Edit Grammar <-> Reader Synchronous Display
 
 ```mermaid
@@ -24,8 +24,7 @@ a <--Synchronous display --> c
 ```
 
 !!! note plan support
-     1. Use the drag-and-drop function for images
-     2. Support file upload and selection (if +Server)
+     1. Support file upload and selection (if +Server)
 
 # Markdown Demo
        4 blank keys on the left
