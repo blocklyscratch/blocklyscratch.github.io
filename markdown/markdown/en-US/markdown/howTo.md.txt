@@ -8,13 +8,13 @@
 
 ## Features
 
-1. The size of Reader is A4, easy to print and transfer (ctrl-p)
-2. Editor - ==double clicks reader== screen to switch **editor**/_reader_ (Or click outsite of reader)
-3. Introduction to the editor
+1. Reader A4 size, convenient for printing and converting (print icon in the upper right corner)
+2. You can use **drag and drop** or **Ctrl-v** to add an image file or open a text file in the Reader area.
+3. Editor - ==double clicks reader== screen to switch **editor**/_reader_ (Or click outsite of reader)
+4. Introduction to the editor
     ![note](markdown/markdown_toolbar.jpg "mouse over")
     1. The upper part is the preview of each function screen, click to add the editing syntax used in the preview screen
     2. You can search and quickly add the leftmost screen preview ctrl-enter
-    3. **Drag** ==Images== or ==Text files== into Markdown.
     4. Edit Grammar <-> Reader Synchronous Display
 
 ```mermaid
