@@ -1,18 +1,38 @@
-# Hi~ 這是 Markdown 閱讀器/編輯器
+!!! note 這是 Markdown 閱讀器/編輯器 
+    <table>
+    <tr>
+    <td>
+    <div style="width:200px">
 
-## 概述
+    ![note](https://markdown.tw/images/208x128.png "mouse over")
 
-- Markdown 的目標是實現「易讀易寫」 (更容易閱讀、編寫)
-- 廣泛使用 (參閱 [Markdown TW](https://markdown.tw/) , [wikipedia](https://zh.wikipedia.org/zh-tw/Markdown "This title"))
-- 撰寫說明文件, 發表訊息 與 撰寫電子書
+    </div>
+    </td>
+    
+    <td>    
+
+    - Markdown 的目標是實現「易讀易寫」
+    - 撰寫說明文件, 發表訊息 與 撰寫電子書
+    - 參閱 [Markdown TW](https://markdown.tw/) , [wikipedia](https://zh.wikipedia.org/zh-tw/Markdown "This title")
+
+    </td>
+    </tr>
+    </table>
+
+<style>
+table { }
+tr {  border: 0px !important}
+td { border: 0px  !important}
+</style>
 
 ## 功能與特色
 
 1. 閱讀器 A4 大小, 方便列印轉檔 (右上角列印圖示)
 2. 閱讀器區域可使用**拖拉方式** 或 **Ctrl-v** 加入圖檔 或 開啟 文字檔
-3. 編輯器 - ==雙按閱讀器==畫面, 可切換 **編輯器**/_閱讀器_ (或 點擊閱讀器外)
+3. 編輯器 - ==雙按閱讀器==畫面, 可切換 **編輯器**/_閱讀器_ 
+   (或 右上角編輯圖示<i style="font-size:26px" class="q-icon notranslate material-icons iMouseOverGreen">article</i>)
 4. 編輯器 簡介
-   ![note](markdown/markdown_toolbar.jpg "mouse over")
+   ![note](markdown/markdown_toolbar.jpg)
    1. 上方為各功能畫面預覽, 點選可加入預覽畫面使用的編輯語法
    2. 可搜尋與快速加入最左方畫面預覽 ctrl-enter (esc 鍵~~清除~~搜尋) 
    3. 編輯語法 <-> 閱讀器 同步顯示
@@ -22,9 +42,6 @@ flowchart LR
 a[編輯器] --> b[即時預覽] --> c(閱讀器)
 a <--同步顯示--> c
 ```
-
-!!! note 計劃支援    
-    1. 可支援檔案上傳與選擇 ( if +Server)
 
 # Markdown 展示
       左方4個空白鍵
@@ -121,3 +138,4 @@ a <--同步顯示--> c
         B-->>-A: B --> -A
         B-->>A: B -->> A
     ```
+

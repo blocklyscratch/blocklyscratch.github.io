@@ -1,123 +1,141 @@
-# Hi~ This is a Markdown reader/editor
+!!! note This is a Markdown reader/editor
+     <table>
+     <tr>
+     <td>
+     <div style="width:200px">
 
-## Overview
+     ![note](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
 
-- The goal of Markdown is to achieve easy-to-read and easy-to-write
-- Widely used (see [wikipedia](https://en.wikipedia.org/wiki/Markdown "This title"))
-  - Write documentation pages, blogging, instant messaging, online forums and write eBooks
+     </div>
+     </td>
+    
+     <td>
 
-## Features
+     - The goal is to achieve "easy to read and write"
+     - Write documentation, messages and create e-books
+     - See [wikipedia](https://en.wikipedia.org/wiki/Markdown)
+
+     </td>
+     </tr>
+     </table>
+
+<style>
+table { }
+tr { border: 0px !important}
+td { border: 0px !important}
+</style>
+
+## Functions and features
 
 1. Reader A4 size, convenient for printing and converting (print icon in the upper right corner)
-2. You can use **drag and drop** or **Ctrl-v** to add an image file or open a text file in the Reader area.
-3. Editor - ==double clicks reader== screen to switch **editor**/_reader_ (Or click outsite of reader)
-4. Introduction to the editor
-    ![note](markdown/markdown_toolbar.jpg "mouse over")
-    1. The upper part is the preview of each function screen, click to add the editing syntax used in the preview screen
-    2. You can search and quickly add the leftmost screen preview ctrl-enter
-    4. Edit Grammar <-> Reader Synchronous Display
+2. You can use **drag and drop** or **Ctrl-v** to add image files or open text files in the reader area.
+3. Editor - ==Double-press Reader== screen or <i style="font-size:26px" class="q-icon notranslate material-icons iMouseOverGreen">article</i>,
+ can switch to **Editor**/_Reader_
+    
+4. Editor Introduction
+    ![note](markdown/markdown_toolbar.jpg)
+    1. The upper part is a preview of each function screen. Click to add the editing syntax used in the preview screen.
+    2. You can search and quickly add the leftmost screen preview ctrl-enter (esc key~~clear~~search)
+    3. Edit syntax <-> Reader synchronous display
 
 ```mermaid
 flowchart LR
-a[editor] --> b[instant preview]--> c(reader)
-a <--Synchronous display --> c
+a[Editor] --> b[Instant Preview] --> c(Reader)
+a <--Synchronized display--> c
 ```
-
-!!! note plan support
-     1. Support file upload and selection (if +Server)
 
 # Markdown Demo
        4 blank keys on the left
-
 > 21^th^ H~2~O
 !!! :+1::heavy_check_mark::hamster::frog::rocket:
-     `console.log("inline code")`
+      `console.log("inline code")`
 
-!!! tip Math  
-    Inline: $E=mc^2$
-    ```math
-    \displaystyle
-        \frac{1}{
-            \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
-            \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
-            1+\frac{e^{-6\pi}}
-            {1+\frac{e^{-8\pi}}
-            {1+\cdots} }
-            }
-        }
-    ```
+!!! tip mathematical formula
+     Inline: $E=mc^2$
+     ```math
+     \displaystyle
+         \frac{1}{
+             \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
+             \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
+             1+\frac{e^{-6\pi}}
+             {1+\frac{e^{-8\pi}}
+             {1+\cdots} }
+             }
+         }
+     ```
 
-!!! snippet Promming Languase  
-    ```js
-    let theList = ["Markdown", "Reader", "Editor"];
-    for (let eachOne of theList) {
-      console.log("Hello ", eachOne);
-    }
-    ```
+!!! snippet program
+     >
+     ```js
+     let theList = ["Markdown", "Reader", "Editor"];
+     for (let eachOne of theList) {
+       console.log("Hello ", eachOne);
+     }
+     ```
 
-!!! Done Table  
-    >
-    | default | text left | text center | text right |
-    | ------- | :-------- | :---------: | ---------: |
-    | data    | :-        |             |            |
-    | data    |           |     :-:     |            |
-    | data    |           |             |         -: |
+!!! Done form
+     >
+     | default | text left | text center | text right |
+     | ------- | :-------- | :---------: | ----------: |
+     | data | :- | | |
+     | data | | :-: | |
+     | data | | | -: |
 
 
-!!! Success Flowchart  
-    ```mermaid
-    flowchart TD
-    a[Start] --> b{Going} --> c(fa:fa-home Stop)
-    a --what--> c
-    ```
-!!! Success Pie  
-    ```mermaid
-    pie title Pets adopted by volunteers
-      "Dogs" : 386
-      "Cats" : 85
-      "Rats" : 15
-    ```
-!!! Success Class diagram
-    ```mermaid
-    classDiagram
-        Animal <|-- Fish
-        Animal : +int iVar
-        Animal: +theFn()
-        class Fish{
-          -String sVar
-          -fishFn()
-        }
-    ```
+!!! Success flow chart
+     ```mermaid
+     flowchart TD
+     a[Start] --> b{Going} --> c(fa:fa-home Stop)
+     a --what--> c
+     ```
+!!! Success Pie Chart
+     ```mermaid
+     pie title Pets adopted by volunteers
+       "Dogs" : 386
+       "Cats" : 85
+       "Rats" : 15
+     ```
+!!! Success Object Chart
+     ```mermaid
+     classDiagram
+         Animal <|-- Fish
+         Animal : +int iVar
+         Animal: +theFn()
+         class Fish{
+           -String sVar
+           -fishFn()
+         }
+     ```
 
-!!! Success State diagram
-    ```mermaid
-    stateDiagram-v2
-        [*] --> Still
-        Still --> [*]
-        Still --> Moving
-        Moving --> Still
-        Moving --> Crash
-        Crash --> [*]
-    ```
+!!! Success status chart
+     ```mermaid
+     stateDiagram-v2
+         [*] --> Still
+         Still --> [*]
+         Still --> Moving
+         Moving --> Still
+         Moving --> Crash
+         Crash --> [*]
+     ```
 
-!!! Success Gantt
-    ```mermaid
-    gantt
-    title Your Title (Gantt Diagram)
-    dateFormat  YYYY-MM-DD
-    section S1 Section
-    A task  :a1, 2023-01-01, 6d
-    B task  :after a1, 2d
-    section S2 Section
-    C task  :c1, 2023-01-01, 2d
-    D task  :after c1, 6d
-    ```
+!!! Success Gantt Chart
+     ```mermaid
+     gantt
+     title Your Title (Gantt Diagram)
+     dateFormat YYYY-MM-DD
+     Section S1 Section
+     A task:a1, 2023-01-01, 6d
+     B task: after a1, 2d
+     section S2 Section
+     C task: c1, 2023-01-01, 2d
+     D task: after c1, 6d
+     ```
 
-!!! Success Sequence diagram
-    ```mermaid
-    sequenceDiagram
-        A->>B: A ->>  B
-        A->>+B: A ->> +B
-        B-->>-A: B --> -A
-        B-->>A: B -->> A
-    ```
+!!! Success sequence diagram
+     ```mermaid
+     sequenceDiagram
+         A->>B: A->>B
+         A->>+B: A->>+B
+         B-->>-A: B -->-A
+         B-->>A: B -->>A
+     ```
