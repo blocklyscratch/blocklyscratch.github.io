@@ -1,0 +1,141 @@
+!!! note 這是 Markdown 閱讀器/編輯器 
+    <table>
+    <tr>
+    <td>
+    <div style="width:200px">
+
+    ![note](https://markdown.tw/images/208x128.png "mouse over")
+
+    </div>
+    </td>
+    
+    <td>    
+
+    - Markdown 的目標是實現「易讀易寫」
+    - 撰寫說明文件, 發表訊息 與 撰寫電子書
+    - 參閱 [Markdown TW](https://markdown.tw/) , [wikipedia](https://zh.wikipedia.org/zh-tw/Markdown "This title")
+
+    </td>
+    </tr>
+    </table>
+
+<style>
+table { }
+tr {  border: 0px !important}
+td { border: 0px  !important}
+</style>
+
+## 功能與特色
+
+1. 閱讀器 A4 大小, 方便列印轉檔 (右上角列印圖示)
+2. 閱讀器區域可使用**拖拉方式** 或 **Ctrl-v** 加入圖檔 或 開啟 文字檔
+3. 編輯器 - ==雙按閱讀器==畫面, 可切換 **編輯器**/_閱讀器_ 
+   (或 右上角編輯圖示<i style="font-size:26px" class="q-icon notranslate material-icons iMouseOverGreen">article</i>)
+4. 編輯器 簡介
+   ![note](markdown/markdown_toolbar.jpg)
+   1. 上方為各功能畫面預覽, 點選可加入預覽畫面使用的編輯語法
+   2. 可搜尋與快速加入最左方畫面預覽 ctrl-enter (esc 鍵~~清除~~搜尋) 
+   3. 編輯語法 <-> 閱讀器 同步顯示
+
+```mermaid
+flowchart LR
+a[編輯器] --> b[即時預覽] --> c(閱讀器)
+a <--同步顯示--> c
+```
+
+# Markdown 展示
+      左方4個空白鍵
+> 21^th^ H~2~O
+!!! :+1::heavy_check_mark::hamster::frog::rocket:
+     `console.log("inline code")`
+
+!!! tip 數學式  
+    Inline: $E=mc^2$
+    ```math
+    \displaystyle
+        \frac{1}{
+            \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
+            \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
+            1+\frac{e^{-6\pi}}
+            {1+\frac{e^{-8\pi}}
+            {1+\cdots} }
+            }
+        }
+    ```
+
+!!! snippet 程式  
+    >
+    ```js
+    let theList = ["Markdown", "Reader", "Editor"];
+    for (let eachOne of theList) {
+      console.log("Hello ", eachOne);
+    }
+    ```
+
+!!! Done 表格  
+    >
+    | default | text left | text center | text right |
+    | ------- | :-------- | :---------: | ---------: |
+    | data    | :-        |             |            |
+    | data    |           |     :-:     |            |
+    | data    |           |             |         -: |
+
+
+!!! Success 流程圖  
+    ```mermaid
+    flowchart TD
+    a[Start] --> b{Going} --> c(fa:fa-home Stop)
+    a --what--> c
+    ```
+!!! Success 圓餅圖  
+    ```mermaid
+    pie title Pets adopted by volunteers
+      "Dogs" : 386
+      "Cats" : 85
+      "Rats" : 15
+    ```
+!!! Success 物件圖表
+    ```mermaid
+    classDiagram
+        Animal <|-- Fish
+        Animal : +int iVar
+        Animal: +theFn()
+        class Fish{
+          -String sVar
+          -fishFn()
+        }
+    ```
+
+!!! Success 狀態圖
+    ```mermaid
+    stateDiagram-v2
+        [*] --> Still
+        Still --> [*]
+        Still --> Moving
+        Moving --> Still
+        Moving --> Crash
+        Crash --> [*]
+    ```
+
+!!! Success 甘特圖
+    ```mermaid
+    gantt
+    title Your Title (Gantt Diagram)
+    dateFormat  YYYY-MM-DD
+    section S1 Section
+    A task  :a1, 2023-01-01, 6d
+    B task  :after a1, 2d
+    section S2 Section
+    C task  :c1, 2023-01-01, 2d
+    D task  :after c1, 6d
+    ```
+
+!!! Success 時序圖
+    ```mermaid
+    sequenceDiagram
+        A->>B: A ->>  B
+        A->>+B: A ->> +B
+        B-->>-A: B --> -A
+        B-->>A: B -->> A
+    ```
+
