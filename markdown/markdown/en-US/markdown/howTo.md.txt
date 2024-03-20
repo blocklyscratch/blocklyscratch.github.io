@@ -8,7 +8,7 @@
 
      </div>
      </td>
-    
+
      <td>
 
      - The goal is to achieve "easy to read and write"
@@ -31,18 +31,75 @@ td { border: 0px !important}
 2. You can use **drag and drop** or **Ctrl-v** to add image files or open text files in the reader area.
 3. Editor - ==Double-press Reader== screen or <i style="font-size:26px" class="q-icon notranslate material-icons iMouseOverGreen">article</i>,
  can switch to **Editor**/_Reader_
-    
+
 4. Editor Introduction
     ![note](markdown/markdown_toolbar.jpg)
     1. The upper part is a preview of each function screen. Click to add the editing syntax used in the preview screen.
     2. You can search and quickly add the leftmost screen preview ctrl-enter (esc key~~clear~~search)
     3. Edit syntax <-> Reader synchronous display
+<table>
+<tr>
+<td>
 
 ```mermaid
 flowchart LR
 a[Editor] --> b[Instant Preview] --> c(Reader)
 a <--Synchronized display--> c
 ```
+</td>
+<td>
+
+```echarts 300 250 light
+{
+  title: {
+    text: 'ECharts'
+  },
+  grid: {
+    left: '0%',
+    right: '0%',
+    bottom: '0%',
+    containLabel: true
+  },
+  xAxis: [
+    {
+      type: 'category',
+      boundaryGap: false,
+      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    }
+  ],
+  yAxis: [
+    {
+      type: 'value'
+    }
+  ],
+  series: [
+    {
+      name: 'Email',
+      type: 'line',
+      stack: 'Total',
+      areaStyle: {},
+      emphasis: {
+        focus: 'series'
+      },
+      data: [120, 132, 101, 134, 90, 230, 210]
+    },
+    {
+      name: 'Union Ads',
+      type: 'line',
+      stack: 'Total',
+      areaStyle: {},
+      emphasis: {
+        focus: 'series'
+      },
+      data: [220, 182, 191, 234, 290, 330, 310]
+    },
+  ]
+}
+```
+
+</td>
+</tr>
+</table>
 
 # Markdown Demo
        4 blank keys on the left
@@ -74,15 +131,35 @@ a <--Synchronized display--> c
      ```
 
 !!! Done form
-     >
-     | default | text left | text center | text right |
-     | ------- | :-------- | :---------: | ----------: |
-     | data | :- | | |
-     | data | | :-: | |
-     | data | | | -: |
+    >
+    | default | text left | text center | text right |
+    | ------- | :-------- | :---------: | ---------: |
+    | data    | :-        |             |            |
+    | data    |           |     :-:     |            |
+    | data    |           |             |         -: |
 
+!!! Success ECharts  https://echarts.apache.org/examples/en/index.html
+    ```echarts 500 400 light
+    {
+      series: [
+        {
+          type: 'pie',
+          radius: [50, 150],
+          roseType: 'area',
+          itemStyle: {
+            borderRadius: 8
+          },
+          data: [
+            { value: 40, name: 'rose 1' },
+            { value: 38, name: 'rose 2' },
+            { value: 32, name: 'rose 3' },
+          ]
+        }
+      ]
+    }
+    ```
 
-!!! Success flow chart
+!!! Success flow chart  https://mermaid.live
      ```mermaid
      flowchart TD
      a[Start] --> b{Going} --> c(fa:fa-home Stop)
