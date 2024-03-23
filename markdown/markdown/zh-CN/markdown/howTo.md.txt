@@ -13,7 +13,7 @@
 
      - Markdown 的目标是实现「易读易写」
      - 撰写说明文件, 发表讯息 与 撰写电子书
-     - 参阅 [Markdown TW](https://markdown.com.cn/) , [wikipedia](https://zh.wikipedia.org/zh-cn/Markdown)
+     - 参阅 [Markdown](https://markdown.com.cn/) , [wikipedia](https://zh.wikipedia.org/zh-cn/Markdown)
 
      </td>
      </tr>
