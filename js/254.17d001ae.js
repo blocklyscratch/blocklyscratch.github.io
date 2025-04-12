@@ -1,0 +1,1 @@
+"use strict";(globalThis["webpackChunkcircleworld"]=globalThis["webpackChunkcircleworld"]||[]).push([[254],{55254:(r,e,u)=>{u.r(e),u.d(e,{default:()=>s});var l=u(61758);const t={__name:"userLayout",setup(r){return(r,e)=>{const u=(0,l.g2)("router-view");return(0,l.uX)(),(0,l.CE)("div",null,[(0,l.bF)(u)])}}},c=t,s=c}}]);
