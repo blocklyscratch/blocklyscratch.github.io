@@ -1,0 +1,1 @@
+(function(){"use strict";self.onmessage=function(e){let a=e.data;switch(a.cmd){case"chat_2S_vue2worker":console.log("sourceChatOut:",a.data),self.postMessage({cmd:"chat_2S_w2s",data:a.data});break;case"chat_2C_s2w":console.log("chat_2C_worker2vue:",a.data),self.postMessage({cmd:"chat_2C_worker2vue",data:a.data});break;default:console.log("unSupportted:",a)}}})();
