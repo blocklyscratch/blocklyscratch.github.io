@@ -1,0 +1,1 @@
+(function(){"use strict";self.onmessage=function(s){let e=s.data;switch(e.cmd){case"user_2S_vue2worker":console.log("user_2S_vue2worker:",e.data),self.postMessage({cmd:"user_2S_w2s",data:e.data});break;case"user_2C_s2w":console.log("user_2C_s2w:",e.data),self.postMessage({cmd:"user_2C_worker2vue",data:e.data});break}}})();
